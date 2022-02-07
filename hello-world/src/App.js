@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './Components/Greet'
@@ -18,12 +18,21 @@ import './Components/appStyles.css'
 import styles from './Components/appStyles.module.css'
 import Form from './Components/Form';
 import LifecycleA from './Components/LifecycleA';
+import FragmentDemo from './Components/FragmentDemo';
+import Table from './Components/Table';
+import PureComp from './Components/PureComp';
+import ParentComp from './Components/ParentComp';
+
 
 class App extends Component{
 	render() {
 		return (
 			<div className="App">
-				<LifecycleA/>
+				<ParentComp/>
+				{/* <PureComp/> */}
+				{/* <Table/> */}
+				{/* <FragmentDemo/> */}
+				{/* <LifecycleA/> */}
 				{/* <Form/> */}
 				{/* <h1 className='error'>Error</h1>
 				<h1 className={styles.success}>Success</h1> */}
@@ -49,7 +58,6 @@ class App extends Component{
 				<Welcome name ="Steve" heroName="Captain America"/> 
 				<Welcome name ="Bruce" heroName="Hulk"/>  */}
 			  {/*<Hello/>*/}
-			 
 			</div>
 		  );
 	}
