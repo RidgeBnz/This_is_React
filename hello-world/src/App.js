@@ -22,13 +22,19 @@ import FragmentDemo from './Components/FragmentDemo';
 import Table from './Components/Table';
 import PureComp from './Components/PureComp';
 import ParentComp from './Components/ParentComp';
+import RefsDemo from './Components/RefsDemo';
+import FocusInput from './Components/FocusInput';
+import PortalDemo from './Components/PortalDemo';
 
 
 class App extends Component{
 	render() {
 		return (
 			<div className="App">
-				<ParentComp/>
+				<PortalDemo/>
+				{/* <FocusInput/> */}
+				{/* <RefsDemo/> */}
+				{/* <ParentComp/> */}
 				{/* <PureComp/> */}
 				{/* <Table/> */}
 				{/* <FragmentDemo/> */}
